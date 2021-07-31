@@ -8,6 +8,15 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <h1>CEP Finder!</h1>
+        <form action = <"EnderecoController" method = "post">
+            CEP: <input type="text" name="cep"/>
+            <input type= " submit" value=" Buscar"/>
+        </form>
+        <h3 style= "color: red">${erro}</h3>
+        <h3 style= "color: blue">${endereco.cep}</h3>
+        <h3 style= "color: blue">${endereco.logradouro}</h3>
+        <h3 style= "color: blue">${endereco.bairro}</h3>
+        <h3 style= "color: blue">${endereco.uf}</h3>
     </body>
 </html>
